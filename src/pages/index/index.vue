@@ -26,6 +26,7 @@ import Taro from '@tarojs/taro';
     <text># 支持全局状态管理（vue3的ref和reactive天生就很适合做全局状态管理，并不需要额外引入vuex或pinia）</text>
     <text># 支持路由，但由于page隔离，返回按钮交互问题，一般不建议引入路由，容易和小程序路由搞混，且只能在当前页使用，意义不大</text>
     <text style="color:red">不足：</text>
+    <text># 页面存在循环较多的双向绑定组件时，会导致卡顿。解决方案：1.将组件拆分到不同页面；2.使用虚拟列表技术，只渲染可见区域；3.减少非必要的双向绑定和响应式计算</text>
     <text># 不支持 keep-alive(小程序page隔离，应用场景不多)</text>
     <text># 不支持&lt;style scoped>（小程序不支持属性选择，所以导致[data-v-*]失效。但可以重写vue源码将data-v-*加入class就可以支持了）</text>
     <text># 运行库过大，运行库大概1M，加上第三方组件库，分包吃力</text>
