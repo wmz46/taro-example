@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro';
 import MyButton from '@/components/MyButton.vue';
 const code = `
 <MyButton type="primary" @click="Taro.showToast({ title: '你好' })">你好</MyButton>
+<view v-html="html"></view>
 MyButton.vue
 <script setup lang="ts">
 import { useSlots } from 'vue';
@@ -16,6 +17,7 @@ const slots = useSlots();
 </nut-button>
 </template>
 `
+
 </script>
 <template>
   <MyButton type="primary" @click="Taro.showToast({ title: '你好' })">你好</MyButton>

@@ -4,7 +4,8 @@ export default defineAppConfig({
     'pages/demo1/index',
     'pages/demo2/index',
     'pages/demo3/index',
-    'pages/demo4/index'
+    'pages/demo4/index',
+    'pages/demo5/index'
   ],
   window: {
     backgroundTextStyle: 'light',
